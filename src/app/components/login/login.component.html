@@ -1,0 +1,31 @@
+<div class="container-fluid one">
+    <div class="container">
+      <div class="row">
+        <div class="clg-lg-12 int">
+          <h1>PAYLATTE</h1>
+          <form #loginForm=ngForm (ngSubmit)="onSubmit()">
+          
+          <input type="text" [(ngModel)]="form.email" name="email" value="" placeholder="Enter Your Email" required >
+          <br>
+          <input type="password" [(ngModel)]="form.password" name="password" value="" placeholder="enter your password" required>
+          <br>
+        
+          <button type="submit" >log in</button>
+          <br>
+          <br>
+
+          <a  >Forgot Password</a>
+        <span>Don't have an Account?</span>
+        <a [routerLink]="'/register'" >Sign up</a>
+         
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  
+ 
+  
+  
+ 

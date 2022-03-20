@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.tele-logo {
+    background: #fff;
+}
+
+/* .header-sec {
+    height: 60px; 
+} */
+
+.tel img {
+    width: 130px;
+    margin-top: 20px;
+    margin-left: 84px;
+}
+
+.logo nav {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.logo nav a {
+    margin-left: 55px;
+    font-style: inherit;
+    font-size: 26px;
+    color: navy;
+    text-decoration: none;
+}
+
+.logo button {
+    margin-left: 80px;
+    background: green;
+    COLOR: WHITE;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    
+}
+
+.logo nav a:hover {
+    background: orange;
+    border-radius: 25px;
+    padding: 10px 10px;
+}

@@ -1,0 +1,356 @@
+
+/* CSS Document */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* .tele-logo {
+    background: #fff;
+}
+
+.header-sec {
+    height: 60px;
+}
+
+.tel img {
+    width: 130px;
+    margin-top: 20px;
+    margin-left: 84px;
+}
+
+.logo nav {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.logo nav a {
+    margin-left: 55px;
+    font-style: inherit;
+    font-size: 26px;
+    color: navy;
+    text-decoration: none;
+}
+
+.logo button {
+    margin-left: 80px;
+    background: green;
+    COLOR: WHITE;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.logo nav a:hover {
+    background: orange;
+    border-radius: 25px;
+    padding: 10px 10px;
+} */
+/*-------------------------------------*/
+.banner-sec {
+    background: url("../../../assets/ZoodPay - Buy now Pay later_files/bnpl.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1010px;
+} 
+
+.bnr img {
+    height: 500px;
+}
+
+.cont {
+    margin-left: 390px;
+    margin-top: 500px;
+}
+
+.cont h2 {
+    color: #00008b;
+    margin-left: 170px;
+    font-size: 40px;
+}
+
+.cont h1 {
+    font-size: 50px;
+    color: darkblue;
+}
+
+.cont p {
+    font-size: 20px;
+    /*! margin-left: -80px; */
+}
+/*---------------------------------------------------*/
+
+.workers-secc {
+    background: orange;
+    height: 150px;
+}
+
+.workers-sec {
+    height: 150px;
+    background:gray
+}
+
+.work {
+    margin-left: 34px;
+    margin-top: 44px;
+}
+
+.work h1 {
+    font-size: 50px;
+    color: darkblue;
+}
+
+.work p {
+    font-size: 20px;
+}
+
+.phne-sec {
+    height: 813px;
+    background: gray;
+}
+
+.ph-sec {
+    margin-top: 71px;
+}
+
+.ph-sec img {
+    margin-left: 346px;
+    border-radius: 30px;
+}
+
+.conntent {}
+
+.cn-sec {
+    margin-left: 11px;
+}
+
+.cn-sec h1 {
+    text-align: center;
+}
+
+.cn-sec p {
+    font-size: 18px;
+    text-align: center;
+}
+/*----------------------------------------------------*/
+
+.market-sec{background:orange;
+height: 100px;
+}
+
+.mar-sec h1 {
+    font-size: 32px;
+    padding-top: 47px;
+    color: #00008b;
+}
+
+.mar-sec p {
+    float: left;
+    font-size: 42px;
+    margin-top: 35px;
+    color: darkblue;
+    margin-left: 390px;
+}
+/*-----------------------------------------------------*/
+
+.image-box {
+    background: orange;
+    height: 350px;
+}
+
+.imm-sec {}
+
+.imm-sec img {
+    float: left;
+    margin-left: 200px;
+    margin-top: 40px;
+    width: 200px;
+    height: 230px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+/*-----------------------------------------------------*/
+
+.image-box {}
+
+.later {}
+
+.later img {
+    float: left;
+    margin-left: 200px;
+    margin-top: 30px;
+    width: 200px;
+    height: 230px;
+    border-radius: 20px;
+}
+/*------------------------------------------*/
+
+.customer-sec {
+    background: #dad7ec;
+    height: 650px;
+}
+
+.cu-sec {
+    height: 553px;
+    margin-top: 99px;
+    padding: 20px 20px;
+}
+
+.cu-sec h2 {
+    color: #00008b;
+    font-size: 40px;
+    margin-left: 210px;
+}
+
+.cu-sec h1 {
+    font-size: 50px;
+    color: darkblue;
+}
+
+.cu-sec ul li {
+    font-size: 20px;
+    margin-left: 44px;
+}
+
+.cu-sec p {
+    font-size: 20px;
+}
+
+.cu-imgsec img {
+    width: 380px;
+    margin-top: 50px;
+    height: 552px;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+/*------------------------------------------*/
+
+.terms-sec {
+    background: green;
+    height: 330px;
+    color: white;
+}
+
+.tr-sec {}
+
+.tr-sec ul {}
+
+.tr-sec li {list-style: disclosure-closed;font-size: 23px;text-align: justify;color: #000;}
+
+.tr-sec h1 {
+    font-size: 50px;
+    color: darkblue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tr-sec p {
+    font-size: 22px;
+    line-height: 45px;
+}
+/*------------------------------------------*/
+
+.download-sec {
+    background: yellow;
+    height: 330px;
+}
+
+.down-sec {
+    /*! margin-top: -8px; */
+    margin-left: 1200px;
+}
+
+.down-sec img {
+    margin-left: 356px;
+    float: left;
+}
+
+.down-sec h1 {
+    padding-top: 80px;
+    margin-left: 76px;
+    font-size: 50px;
+    color: darkblue;
+}
+
+.down-sec p {
+    padding-top: 12px;
+    margin-left: 116px;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.down-sec button {
+    margin-left: 93px;
+    padding: 15px;
+    background: black;
+    border: none;
+    color: white;
+    border-radius: 11px;
+}
+/*------------------------------------------*/
+
+/* .copyright-sec {
+    background: #000000;
+    height: 180px;
+}
+
+.copy-sec {}
+
+.copy-sec h5 {
+    color: white;
+    margin-top: 87px;
+    margin-left: 60px;
+}
+
+.carr {
+    margin-left: 80px;
+    margin-top: 60PX;
+}
+
+.carr nav {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.carr nav ul {}
+
+.carr nav li {
+    list-style: none;
+}
+
+.carr nav li a {
+font-size: 22px;
+}
+
+.foot {
+    float: right;
+}
+
+.foot img {
+    border-radius: 160px;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    margin-top: 20px;
+} */

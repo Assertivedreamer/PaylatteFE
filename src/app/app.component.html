@@ -1,0 +1,23 @@
+<div class=" container-fluid tele-logo ">
+    <div class="row">
+        <div class="col-5 tele-sec ">
+            <div class="tel "> <img src="../assets/ZoodPay - Buy now Pay later_files/one.PNG " alt="aaaa"> </div>
+        </div>
+        <div class="col-7 nav-sec ">
+            <div class="logo">
+                <nav>
+                    <a routerLink="/home"  *ngIf="!loggedIn">Home</a>
+                    <a href="# " *ngIf="!loggedIn">Where to shop</a> 
+                    <a href="# " *ngIf="!loggedIn" >For Business</a>
+                    <a href="# " *ngIf="!loggedIn" >About us</a>
+                    <button class="btn btn-success" routerLink="/login" *ngIf="!loggedIn" >Login</button>
+                    <button class="btn btn-success" (click)="logout($event)" *ngIf="loggedIn" >Logout</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+<!----------------------------------------------------------->

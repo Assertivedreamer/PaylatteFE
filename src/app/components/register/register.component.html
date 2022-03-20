@@ -1,0 +1,39 @@
+<div class="container-fluid start">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 sign">
+          <div class="sign_up">
+            
+              <form #signupForm=ngForm (ngSubmit)="onSubmit()" >
+              <h1>SIGN UP</h1>
+              <img src="../../../assets/image/1.JPG " alt="#">
+              <input type="text" [(ngModel)]="form.name" name="Name" placeholder="First Name" required>
+              <img src="../../../assets/image/1.JPG " alt="#">
+              <input type="text"[(ngModel)]="form.last_name" name="Lastname" placeholder="Last Name" required>
+              <br>
+              <img src="../../../assets/image/2.JPG " alt="#">
+              <input type="text" placeholder="Phone Number" name="PhoneNumber"[(ngModel)]="form.phone_number" required>
+              <img src="../../../assets/image/3.JPG " alt="#">
+              <input type="email"[(ngModel)]="form.email" name="email" placeholder="Email" required>
+              <br>
+              <img src="../../../assets/image/4.JPG" alt="# ">
+              <input type="password" [(ngModel)]="form.password" name="Password" placeholder="Password" required>
+              <img src="../../../assets/image/4.JPG " alt="# ">
+              <input type="password" [(ngModel)]="form.confirm_password" name="ConfirmPassword" placeholder="Confirm Password " required>
+              <br>
+              <img src="../../../assets/image/10.png" alt="#">
+              <input type="date"[(ngModel)]="form.dob" name="Date" placeholder="Date" style="padding: 10px 79px;" required>
+              <img src="../../../assets/image/6.jpg" alt="#">
+              <input type="text"[(ngModel)]="form.aadhar" name="AadhaarNumber" placeholder=" Aadhaar Number" required>
+              <br>
+              <img src="../../../assets/image/9.jpg" alt="#">
+              <input type="text" [(ngModel)]="form.pancard" placeholder="Pancard Number" required>
+              <img src="../../../assets/image/8.png" alt="#">
+              <input type="address" [(ngModel)]="form.address" name="Address" placeholder="Address" required>
+              <button type="submit">SIGN UP</button> <span>  Already have an account?<b><a [routerLink]="'/login'">Login</a></b></span>
+            </form>          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
