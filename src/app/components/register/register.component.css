@@ -59,3 +59,11 @@ text-decoration: none;}
 .sign_up span{font-size: 23px;
     color: black;
     margin-left: 60px;}
+
+    .ng-valid:not(form){
+        border-left:10px solid green;
+        }
+        
+        .ng-invalid:not(form){
+            border-left:10px solid red;
+        }

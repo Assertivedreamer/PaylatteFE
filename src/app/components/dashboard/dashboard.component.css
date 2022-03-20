@@ -1,7 +1,3 @@
-@charset "utf-8";
-/* CSS Document */
-
-
 * {
 	margin: 0px;
 	padding: 0px;
@@ -19,7 +15,7 @@ body {
 
 }
 .pr{
-    background-color: #f9888e;
+    background-color: dimgray;
     height: 750px;
 }
 .profile img{
@@ -54,21 +50,22 @@ body {
 
 }
 .pro ul li{
-    border: 1px solid black;
-    background-color: #f6dc66;
+    border: 1px solid #0000002f;
+    background-color: #00000034;
     padding: 0px 53px;
     border-radius: 35px;
     margin-top: 4px;
 }
 .pro ul li:hover{
     border: 1px solid black;
-    background-color:#fa23a8 ;
+    background-color:rgb(26, 25, 25); ;
     padding: 0px 53px;
     border-radius: 35px;
 }
 .pro ul li a{
-    line-height: 48px;
+    line-height: 50px;
     color: black;
+    color: white;
 }
 .pro ul li a:hover{
 text-decoration: none;
@@ -78,7 +75,7 @@ text-decoration: none;
     border-radius: 25px;
 }
 .box{
-    background-color: #ba72b6;
+    background-color: slategray;
 }
 .square{
     float: left;
@@ -95,7 +92,7 @@ text-decoration: none;
     margin-top: 212px;
 }
 .square h1{
-    
+    color:crimson;
 }
 .square p{
     
@@ -126,12 +123,6 @@ text-transform: uppercase;
 .cb{
 	margin-top: 5px;
 }
-
-
-
-
-
-
-
-
-
+.hef{
+    text-align: center;
+}

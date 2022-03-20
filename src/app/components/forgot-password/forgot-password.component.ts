@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forgot-password.component.css']
 })
 export class ForgotPasswordComponent implements OnInit {
-
+  public form = {
+    email:null,
+    password:null,
+    confirm_password:null,
+  };
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit() {
+    
   }
 
 }

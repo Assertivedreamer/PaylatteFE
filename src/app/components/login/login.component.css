@@ -69,6 +69,15 @@ img {
 text-decoration: none;
 }
 
+
+.ng-valid:not(form){
+	border-left:10px solid green;
+	}
+	
+	.ng-invalid:not(form){
+		border-left:10px solid red;
+	}
+
 /* .int span{} */
  
 

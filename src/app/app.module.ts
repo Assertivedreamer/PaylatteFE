@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { SignupComponent } from './components/signup/signup.component';
+
 import { FooterComponent } from './components/footer/footer.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
@@ -24,7 +24,7 @@ import { BeforeLoginService } from './services/before-login.service';
     LoginComponent,
     HomeComponent,
     PageNotFoundComponent,
-    SignupComponent,
+    
     FooterComponent,
     RegisterComponent,
     ForgotPasswordComponent,

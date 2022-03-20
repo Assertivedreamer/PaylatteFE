@@ -1,15 +1,6 @@
 
 /* CSS Document */
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-img {
-    height: auto;
-    max-width: 100%;
-}
 
 
 
@@ -308,6 +299,9 @@ height: 100px;
     color: white;
     border-radius: 11px;
 }
+
+
+
 /*------------------------------------------*/
 
 /* .copyright-sec {
