@@ -5,7 +5,8 @@
           <div class="sign_up">
             
               <form #signupForm=ngForm (ngSubmit)="onSubmit()" >
-              <h1>SIGN UP</h1>
+                <h1>PAYLATTE</h1>
+                <h4>SIGNUP</h4>
               <img src="../../../assets/image/1.JPG " alt="#">
               <input type="text" [(ngModel)]="form.name" name="Name" placeholder="First Name" required>
               <img src="../../../assets/image/1.JPG " alt="#">
@@ -30,10 +31,12 @@
               <input type="text" [(ngModel)]="form.pancard" placeholder="Pancard Number" required>
               <img src="../../../assets/image/8.png" alt="#">
               <input type="address" [(ngModel)]="form.address" name="Address" placeholder="Address" required>
-              <button type="submit">SIGN UP</button> <span>  Already have an account?<b><a [routerLink]="'/login'">Login</a></b></span>
+              <button type="submit" [disabled]="!signupForm.valid">SIGN UP</button> <span>  Already have an account?<b><a [routerLink]="'/login'">Login</a></b></span>
             </form>          
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  

@@ -18,6 +18,9 @@ import { TokenService } from './services/token.service';
 import { AuthService } from './services/auth.service';
 import { AfterLoginService } from './services/after-login.service';
 import { BeforeLoginService } from './services/before-login.service';
+import { VendorComponent } from './components/vendor/vendor.component';
+import { TransComponent } from './components/trans/trans.component';
+import { PayComponent } from './components/pay/pay.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,10 @@ import { BeforeLoginService } from './services/before-login.service';
     FooterComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    DashboardComponent
+    DashboardComponent,
+    VendorComponent,
+    TransComponent,
+    PayComponent
   ],
   imports: [
     BrowserModule,

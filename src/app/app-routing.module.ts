@@ -6,6 +6,10 @@ import {PageNotFoundComponent} from '../app/components/page-not-found/page-not-f
 import { RegisterComponent } from './components/register/register.component';
 import {ForgotPasswordComponent} from './components/forgot-password/forgot-password.component'
 import {DashboardComponent} from './components/dashboard/dashboard.component'
+import {VendorComponent} from './components/vendor/vendor.component'
+import { PayComponent } from './components/pay/pay.component';
+import { TransComponent } from './components/trans/trans.component';
+
 import { BeforeLoginService } from './services/before-login.service';
 import { AfterLoginService } from './services/after-login.service';
 const routes: Routes = [
@@ -34,8 +38,24 @@ const routes: Routes = [
     component: ForgotPasswordComponent
   },
   {
+    path:'vendor', 
+    component: VendorComponent,
+    canActivate: [AfterLoginService]
+  },
+  {
+    path:'pay', 
+    component: PayComponent,
+    canActivate: [AfterLoginService]
+  },
+  {
     path:'dashboard', 
     component: DashboardComponent,
+    canActivate: [AfterLoginService]
+
+  },
+  {
+    path:'trans', 
+    component: TransComponent,
     canActivate: [AfterLoginService]
 
   },

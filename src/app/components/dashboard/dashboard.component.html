@@ -15,7 +15,7 @@
     <ul>
     <li><a href="#"><img src="../../../assets/imd/1.PNG" alt="#">Purchases</a></li>
     <li><a href="#"><img src="../../../assets/imd/2.PNG" alt="#">Shop</a> </li>
-    <li><a href="#"><img src="../../../assets/imd/9.PNG" alt="#">Transactions</a></li>
+    <li><a [routerLink]="'/trans'"><img src="../../../assets/imd/9.PNG" alt="#">Transactions</a></li>
     <li><a href="#"><img src="../../../assets/imd/4.PNG" alt="#">Statements</a></li>
     <li><a href="#"><img src="../../../assets/imd/6.PNG" alt="#">Status</a></li>
     <li><a href="#"><img src="../../../assets/imd/7.PNG" alt="#"> Profile</a></li>
@@ -28,17 +28,17 @@
     
     <div class=" square">
     <h1 >500</h1>
-    <p>CREDIT LIMIT</p>
-    <button class="py">Shop</button>
+    <p>CREDIT BALANCE</p>
+    <button [routerLink]="'/vendor'" type="submit" class="py">Shop</button>
     </div>
     <div class=" square">
     <h1>500</h1>
-    <p class="cb">CREDIT BALANCE</p>
+    <p class="cb">CREDIT LIMIT</p>
     </div>
     <div class=" square">
     <h1>500</h1>
     <p>CREDIT BILL</p>
-    <button class="py">Pay</button>
+    <button [routerLink]="'/pay'"type="submit" class="py">Pay</button>
     </div>
     </div>
     
