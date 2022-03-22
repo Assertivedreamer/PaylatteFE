@@ -1,0 +1,91 @@
+.start {
+    background: url(../../../assets/image/5.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.sign_up {
+   background:#5b3a69;
+width:676px;
+height:490px;
+margin-left:370px;
+margin-top:130px;
+opacity:0.8;
+border-radius:40px;
+}
+
+.sign_up form {
+    margin-left:40px;
+}
+
+.sign_up form h1 {
+    color: white;
+
+text-align: center;
+padding-top: 5px;
+}
+.sign_up form h4 {
+    color: white;
+
+padding-top: 5px;
+text-align: center;
+}
+.sign_up form input {
+   
+    padding: 10px 165px;
+    margin-top: 36px;
+    border-radius: 25px;
+    text-align: center;
+
+
+}
+
+.sign_up img {
+    width: 22px;
+margin-left: 20px;
+margin-top: 34px;
+position: absolute;;
+}
+
+.sign_up button {border-radius: 30px;
+    margin-top: 60px;
+    margin-left: 220px;
+    padding: 5px 30px;
+    background: #d42685;
+    border: none;
+    color: white;
+
+}
+
+.sign_up a{color: white;
+    margin-left: 10px;
+text-decoration: none;}
+
+.sign_up span{font-size: 23px;
+    color: black;
+    margin-left: 60px;}
+
+    .ng-valid:not(form){
+        border-left:10px solid green;
+        }
+        
+        .ng-invalid:not(form){
+            border-left:10px solid red;
+        }
+
+        #sp{
+            padding: 10px 130px;
+            margin-top: 50px;
+border-radius: 25px;
+text-align: center;
+
+        }
+        #spll{
+            
+margin-top: 15px;
+border-radius: 25px;
+text-align: center;
+color:rgb(240, 228, 228);
+font-size: 20px;
+        }

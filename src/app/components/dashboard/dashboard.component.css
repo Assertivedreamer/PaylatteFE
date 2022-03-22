@@ -20,11 +20,11 @@ body {
 }
 .profile img{
     margin-top: 40px;
-    width: 50%;
-    border-radius: 71%;
-    height: 117px;
-    display: block;
-    margin-left: 47px;
+width: 37%;
+border-radius: 78%;
+height: 98px;
+display: block;
+margin-left: 86px;
 }
 .profile label{
     margin-left: 53px;
@@ -72,7 +72,7 @@ text-decoration: none;
 }
 .pro ul li a img{
     width: 17%;
-    border-radius: 25px;
+    border-radius: 30px;
 }
 .box{
     background-color: slategray;
