@@ -1,16 +1,17 @@
 .start {
-    background: url(../../../assets/image/5.jpg)no-repeat;
+    background: url(../../../assets/image/pexels-nataliya-vaitkevich-6214155.jpg)no-repeat;
     background-size: cover;
     background-position: center;
-    height: 900px;
+    height: 2000px;
+
 }
 
 .sign_up {
-   background:#5b3a69;
+   background:#3a4d69;
 width:676px;
 height:490px;
 margin-left:370px;
-margin-top:130px;
+margin-top:350px;
 opacity:0.8;
 border-radius:40px;
 }
