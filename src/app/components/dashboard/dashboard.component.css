@@ -1,128 +1,168 @@
-* {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-	text-decoration: none;
-	box-sizing: border-box;
-}
-body {
-	background: #f5f6fa;
-}
-.pro-sec{
+.nav-sec{height: 96px;
 
 }
-.profile{
-
-}
-.pr{
-    background-color: dimgray;
-    height: 750px;
-}
-.profile img{
-    margin-top: 40px;
-width: 37%;
-border-radius: 78%;
-height: 98px;
-display: block;
-margin-left: 86px;
-}
-.profile label{
-    margin-left: 53px;
-}
-.profile input[type="file"]{
-
-}
-.profile h3{
-    text-align: center;
-    margin-top: 10px;
-}
-.profile h4{
-    font-size: 18px;
-    text-align: center;
-}
-.profile p{
-    text-align: center;
-}
-.pro{
-    margin-top: 50px;
-}
-.pro ul{
-
-}
-.pro ul li{
-    border: 1px solid #0000002f;
-    background-color: #00000034;
-    padding: 0px 53px;
-    border-radius: 35px;
-    margin-top: 50px;
-}
-.pro ul li:hover{
-    border: 1px solid black;
-    background-color:rgb(26, 25, 25); ;
-    padding: 0px 53px;
-    border-radius: 35px;
-}
-.pro ul li a{
-    line-height: 50px;
-    color: black;
-    color: white;
-}
-.pro ul li a:hover{
-text-decoration: none;
-}
-.pro ul li a img{
-    width: 17%;
-    border-radius: 30px;
-}
-.box{
-    background-color: slategray;
-}
-.square{
-    float: left;
-    border: solid 1px black;
-    height: 209px;
-    width: 200px;
-    margin-left: 145px;
-    text-align: center;
-    border-radius: 15%;
-    outline: solid 1px red;
-    background: #71d6cc;
-	padding-top: 33px;
-    line-height: 40px;
-    margin-top: 212px;
-}
-.square h1{
-    color:crimson;
-}
-.square p{
+.navs{
+    border: 2px solid whitesmoke;
+    padding: 22px 0px;
     
 }
-.square h1:hover {color:blue;
+.navs nav{
+    padding-left: 0px;
 }
-.square p:hover{color:blue;
-text-transform: uppercase;
+.navs nav a{
+    margin-left: 270px;
+    color: darkgray;
+    text-decoration: none;
 }
-.square:hover{
-	box-shadow:2px 2px 10px 2px black;
+
+.navs nav a.active{color:green;}
+
+.navs nav a:hover{
+    color:#34f1df;
+    border-bottom:4px solid #3da197;
+    text-decoration: none;
+    padding-bottom:20px;
 }
-.py{
-	padding: 0px 42px;
-    margin-top: 0px;
-    background-color: #e9b528;	
-    border-radius: 12px;
-    border: none;
+.dash-sec{
 
 }
-.py:hover{
-	padding: 0px 42px;
-    margin-top: 0px;
-    background-color: rgb(255, 0, 140);	
-    border-radius: 12px;
+.dash{
+    margin-top: 35px;
+    background: #3da197;
+    height: 700px;}
+
+    /* .dash {
+        background: linear-gradient(-45deg,  #3da197);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+        height: 100vh;
+        }
+        
+        @keyframes gradient {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+        }  */
+
+
+        .text-uppercase {
+            text-transform: uppercase !important;
+            font-size: 25px;
+          }
+
+.sub{
+    margin-left: 300px;
+    margin-top: 160px;
+}
+.brd{
+    
+    border: 2px solid whitesmoke;
+    width: 121%;
+    padding: 39px 160px;
+    margin-left: -250px;
+
+}
+.brd h5{
+    display: inline-block;
+    margin-right: 148px;
+}
+.brd h6{
+    color: darkgray;
+    font-weight: 400;
+    margin-top: 25px;
+}
+.brd button{
+    margin-left: 340px;
+    padding: 5px 80px;
+    background-color: #34f1df;
     border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
 }
-.cb{
-	margin-top: 5px;
+.icn{
+    color:white;
+    margin-right: 6px;
 }
-.hef{
+.brd p{
+    display: inline-block;
+}
+
+.brd p b{
+    display: inline-block;
+    font-size:30px;
+}
+.sp {
+    border: 12px solid whitesmoke;
+    width: 99%;
+    padding: 15px 130px;
+  }
+.sp p em{
+    
+    color: black;
+    font-size: 13px;
+    margin-left: 20px;
+}
+.sp p strong{
+    color: black;
+font-size: 30px;
+margin-left: -10px;
+}
+.sp p{
+    margin-top: 17px;
+color: black;
+font-size: 13px;
+margin-right: 32px;
+}
+.du{
+    text-align: right;
+}
+.trans-sec{
+
+}
+.trans{
+
+}
+.sac{
+    border: 2px solid whitesmoke;
+    width: 68%;
+    margin-left: 304px;
+    margin-top: 28px;
+}
+.sac h1{
     text-align: center;
+    font-size: 17px;
+    border-bottom: 3px solid whitesmoke;
+    padding: 13px 0px;
+    font-weight: 500;
+    color: cadetblue;
+}
+.sac ul{
+
+}
+.sac ul li{
+    list-style: none;
+color: darkgrey;
+padding-bottom: 16px;
+margin-top: 20px;
+width: 93%;
+padding-left: 300px;
+}
+.sac ul li b{
+    margin-left: 304px;
+    font-weight: 500;
+    color: cadetblue;
+}
+.sac ul li p{
+    display: inline-block;
+    color: darkgrey;
+    font-weight: 200;
+    font-size: 13px;
 }

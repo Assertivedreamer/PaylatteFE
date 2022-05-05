@@ -1,61 +1,74 @@
 * {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+    list-style: none;
 }
 
-img {
-    height: auto;
-    max-width: 100%;
-}
 
 .tele-logo {
-    background: #fff;
+    background:#fff;
+    height:129px;
+    
+   
 }
 
-/* .header-sec {
-    height: 60px; 
-} */
-
-.tel img {
-    width: 130px;
-    margin-top: 20px;
-    margin-left: 84px;
+label img{height: 100px;
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 29px;
 }
 
-.logo nav {
-    list-style: none;
-    margin-top: 25px;
+nav ul{
+    float: right;
+margin-top: 40px;
+    
+
+}
+nav ul li{
+    display:inline-block;
+    line-height:80px;
+   
+}
+nav ul li a{
+    margin-left: 30px;
+    color:#000;
+    font-size:17px;
+    padding:7px 13px;
+    border-radius:3px;
+    text-transform: uppercase;
+}
+a:hover{
+    background:#1b9bff;
+    transition:.5s;
 }
 
-.logo nav a {
-    margin-left: 55px;
-    font-style: inherit;
-    font-size: 26px;
-    color: navy;
-    text-decoration: none;
+
+.checkbtn{font-size: 30px;
+    color: #000;
+    float: right;
+    cursor:pointer;
+    display:none;
+    line-height: 80px;
+    margin-right: 40px;
+    
+
+}
+#check{display: none;
+    
 }
 
-.logo button {
-    margin-left: 80px;
+button {
+    margin-left: 150px;
     background: green;
     COLOR: WHITE;
     border: none;
     padding: 10px 15px;
     border-radius: 30px;
     font-size: 18px;
-    
+    margin-right:100px
 }
 
-#log{
-
-    margin-left: 950px; 
-}
-
-.logo nav a:hover {
-    background: orange;
-    border-radius: 25px;
-    padding: 10px 10px;
-}
 
 .ng-valid:not(form){
 	border-left:5px solid green;
@@ -63,4 +76,93 @@ img {
 	
 	.ng-invalid:not(form){
 		border-left:5px solid red;
-	}
+    }
+
+ @media(max-width: 600px){
+    
+    .tele-logo {
+        background:#fff;
+        height:200px;}
+    
+    nav ul{float:right;
+
+    }
+    nav ul li{
+        margin: 50px 0;
+line-height: 10px;
+display: inline;
+    }
+    nav ul li a{
+        color: #000;
+padding: 7px 13px;
+border-radius: 3px;
+text-transform: uppercase;
+margin-left: 0px;
+font-size: 11px;
+    }
+    a:hover{
+        background:#1b9bff;
+        color:#0082e6;
+    
+    }
+    
+    label img{
+        width: 50%;
+margin-left: 10px;
+height: 70px;
+    }
+    button {margin-right: 10px;
+        margin-left: 10px;
+        background: green;
+        COLOR: WHITE;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 30px;
+        font-size: 18px;
+        
+    }
+    }
+ 
+@media(max-width:350px){
+
+    .tele-logo {
+        background:#fff;
+        height:100px;
+    }
+.checkbtn{margin-top: 10px;
+    display: block;
+
+}
+ul{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    background:#2c3e50;
+    top:60px;
+    left:-100%;
+    text-align:center;
+}
+nav ul li{
+    display:block;
+margin:50px 0;
+line-height:30px;
+}
+nav ul li a{
+    font-size:20px;
+
+}
+a:hover{
+    background:#1b9bff;
+    color:#0082e6;
+
+}
+#check:checked ~ ul{
+    left:0;
+
+}
+label img{
+    width: 54%;
+margin-left: 20px;
+margin-top: 20px;
+}
+} 

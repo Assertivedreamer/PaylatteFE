@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px
+}
+
+ img {
+	width: 100%;
+	height: auto;
+}
+
+.second {background:#fff;
+height:4200px;
+}
+.power {
+}
+.power h1 {
+	color: #3d3f93;
+	width: 49%;
+	line-height: 55px;
+	margin-left: 680px;
+}
+
+.power h1 b{background:#ffdd00;
+}
+.power h2 {
+	margin-left: 160px;
+	font-size: 20px;
+}
+.power p {
+	color: #0f0e0e;
+margin-left: 160px;
+line-height: 30px;
+width: 1520px;
+text-align: justify;
+}
+.power img {
+	width: 59%;
+	margin-left: 400px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.power button {
+	margin-left: 580px;
+	background: #0e3e9b;
+	color: #f0ff00;
+	border: none;
+	padding: 10px 70px;
+	border: 1px solid #0E3E9B;
+	margin-top: 50px;
+	margin-bottom:50px;
+} 
+@media(max-width:600px){
+	img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.second {background:#fff;
+	height:6200px;
+	}
+	.power {
+	}
+	.power h1 {
+		color: #3d3f93;
+		width: 49%;
+		line-height: 55px;
+		margin-left: 680px;
+	}
+	
+	.power h1 b{background:#ffdd00;
+	}
+	.power h2 {
+		margin-left: 50px;
+		font-size: 20px;
+	}
+	.power p {
+		color: #0f0e0e;
+margin-left: 20px;
+line-height: 30px;
+width: 560px;
+text-align: justify;
+font-size: 14px;
+	}
+	.power img {
+		width: 59%;
+		margin-left: 130px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.power button {
+		margin-left: 580px;
+		background: #0e3e9b;
+		color: #f0ff00;
+		border: none;
+		padding: 10px 70px;
+		border: 1px solid #0E3E9B;
+		margin-top: 50px;
+		margin-bottom:50px;
+	} 
+	
+}
+@media(max-width:350px){
+	img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.second {background:#fff;
+	height:9565px;
+	}
+	.power {
+	}
+	.power h1 {
+		color: #3d3f93;
+		width: 49%;
+		line-height: 55px;
+		margin-left: 680px;
+	}
+	
+	.power h1 b{background:#ffdd00;
+	}
+	.power h2 {
+		margin-left: 10px;
+		font-size: 20px;
+	}
+	.power p {
+		color: #0f0e0e;
+margin-left: 10px;
+line-height: 30px;
+width: 330px;
+text-align: justify;
+font-size: 14px;
+	}
+	.power img {
+		width: 59%;
+		margin-left: 70px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.power button {
+		margin-left: 580px;
+		background: #0e3e9b;
+		color: #f0ff00;
+		border: none;
+		padding: 10px 70px;
+		border: 1px solid #0E3E9B;
+		margin-top: 50px;
+		margin-bottom:50px;
+	} 
+	
+}

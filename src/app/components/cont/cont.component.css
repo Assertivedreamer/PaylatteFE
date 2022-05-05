@@ -1,0 +1,132 @@
+.first{background: #fff;
+    height: 680px;
+    }
+    
+    
+    .cont h1{color: #3D3F93;
+        background: #fd0;
+        padding: 10px 20px;
+        font-size: 40px;
+        margin-top: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .getit{margin-left: 120px;
+    }
+    
+    .getit h2{font-size: 50px;
+    }
+    .getit nav{
+
+    }
+    
+    .getit nav a{color: #424141;
+    text-decoration: none;
+    }
+    
+    .getit h3{color: #3d9be9;
+    font-size: 20px;
+    }
+    .getit p{margin: 0px;
+margin-top: 25px; }
+        
+    
+    .for{}
+    
+    
+    
+    .for iframe{width:540px; height:500px;
+    border-radius:30px;
+}
+    @media(max-width:600px){
+        .first{background: #fff;
+            height: 550px;
+            }
+            
+            
+            .cont h1{color: #3D3F93;
+                background: #fd0;
+                width: 257px;
+                padding: 10px 20px;
+                font-size: 40px;
+                margin-left: 250px;
+                margin-top: 30px;
+                border-radius: 10px;
+            }
+            
+            .getit{margin-left: 10px;
+            }
+            
+            .getit h2{font-size: 30px;
+            }
+            .getit nav{
+        
+            }
+            
+            .getit nav a{color: #424141;
+            text-decoration: none;
+            }
+            
+            .getit h3{color: #3d9be9;
+            font-size: 20px;
+            }
+            .getit p{margin: 0px;
+        margin-top: 25px; }
+                
+            
+            .for{}
+            
+            
+            
+            .for iframe{width: 260px;
+                height: 260px;
+                border-radius: 30px;
+                margin-top: 70px;}
+    }
+    @media(max-width:350px){
+        .first{background: #fff;
+            height: 550px;
+            }
+            
+            
+            .cont h1{color: #3D3F93;
+                background: #fd0;
+                width: 157px;
+                padding: 10px 20px;
+                font-size: 20px;
+                margin-left: 150px;
+                margin-top: 30px;
+                border-radius: 10px;
+            }
+            
+            .getit{margin-left:-10px;
+            }
+            
+            .getit h2{font-size: 20px;
+            }
+            .getit nav{
+        
+            }
+            
+            .getit nav a{color: #424141;
+                text-decoration: none;
+                font-size: 11px;
+            }
+            
+            .getit h3{color: #3d9be9;
+            font-size: 20px;
+            }
+            .getit p{margin: 0px;
+        margin-top: 25px; }
+                
+            
+            .for{}
+            
+            
+            
+            .for iframe{width: 150px;
+                height: 200px;
+                border-radius: 30px;
+                margin-top: 70px;}
+    }

@@ -1,0 +1,251 @@
+.nav-sec{    height: 123px;
+
+}
+.navs{
+    border: 2px solid whitesmoke;
+    padding: 22px 0px;
+
+}
+.navs nav{
+    padding-left: 0px;
+}
+.navs nav a{
+    margin-left: 266px;
+    color: darkgray;
+    text-decoration: none;
+}
+.navs nav a:hover{
+    color:#34f1df;
+    border-bottom:4px solid #34f1df;
+    text-decoration: none;
+    padding-bottom:20px;
+}
+.navs nav a.active{
+    color:green;
+}
+
+
+
+.bill-sec{
+    margin-top: 34px;
+     background: #3da197; 
+    height: 700px;}
+
+    .text-uppercase {
+        text-transform: uppercase !important;
+        font-size: 25px;
+        margin-left: -10px;
+      }
+
+    
+
+.bill{
+
+}
+.bill h3{
+    font-size: 16px;
+    font-weight: 500;
+    color:#000;
+    
+    text-align: center;
+}
+.bills{
+    border: 2px solid floralwhite;
+    width: 67%;
+    margin-left: 195px;
+    padding-left: 26px;
+    margin-top: 30px;
+    text-align: center;
+}
+.bills p{
+    margin-top: 22px;
+    line-height: 50px;
+}
+.bills h1{
+    display: inline-block;
+    margin-top: -20px;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+.bills button{
+    border: none;
+    background-color: white;
+    color:#25e4e4;
+    margin-left: 681px;
+    border-radius: 45%;
+}
+
+.b-sec{
+
+}
+.b{
+
+}
+.b h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: darkgrey;
+    margin-left: 282px;
+    margin-top: 38px
+}
+.bs{
+    border: 2px solid floralwhite;
+    width: 67%;
+    margin-left: 200px;
+    margin-top: 30px;
+    text-align: center;
+}
+.bs h6{
+    border-bottom: 2px solid whitesmoke;
+    padding: 11px 0px 11px 26px;
+    background-color: #fdfdff;
+    color: darkgrey;
+}
+.bs p{
+    display: inline-block;
+    margin-left: 24px;
+}
+.st{
+    margin-left: 93px;
+    border-color: whitesmoke;
+    background-color: #fdfdff;
+    border-radius: 4px;
+    color: darkgray;
+}
+.bs h1{
+    display: inline-block;
+    margin-top: -20px;
+    font-size: 34px;
+    margin-bottom: 20px;
+    margin-left: 22px;
+}
+.set{
+    font-weight: bolder;
+    color: #21af7f;
+}
+.tr{
+    border: none;
+    background-color: white;
+    color:#25e4e4;
+    margin-left: 664px;
+}
+@media(max-width:600px){
+    .nav-sec{    height: 123px;
+
+    }
+    .navs{
+        border: 2px solid whitesmoke;
+        padding: 22px 0px;
+    }
+    .navs nav{
+        padding-left: 211px;
+    }
+    .navs nav a{
+        margin-left: 300px;
+        color: darkgray;
+        text-decoration: none;
+    }
+    .navs nav a:hover{
+        color:#34f1df;
+        border-bottom:4px solid #34f1df;
+        text-decoration: none;
+        padding-bottom:20px;
+    }
+    .navs nav a.active{
+        color:red;
+    }
+    
+    .bill-sec{
+        margin-top: 5px;
+background: #3da197;
+height: 323px;}
+
+    .bill h3{
+        font-size: 16px;
+        font-weight: 500;
+        color:#000;
+        
+        text-align: center;
+    }
+    .bills{
+        border: 2px solid floralwhite;
+        width: 94%;
+        margin-left: 20px;
+        padding-left: 26px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .bills p{
+        margin-top: 22px;
+margin-right: 310px;
+    }
+    .bills h1{
+        display: inline-block;
+margin-top: 10px;
+font-size: 34px;
+margin-bottom: 20px;
+margin-left: -300px;
+    }
+    .bills button{
+        border: none;
+        background-color: white;
+        color:#25e4e4;
+        margin-left: 681px;
+    }
+    
+    .b-sec{
+    
+    }
+    .b{
+    
+    }
+    .b h3{
+        font-size: 16px;
+        font-weight: 500;
+        color: darkgrey;
+        margin-left: 282px;
+        margin-top: 38px
+    }
+    .bs{
+        border: 2px solid floralwhite;
+        width: 67%;
+        margin-left: 200px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .bs h6{
+        border-bottom: 2px solid whitesmoke;
+        padding: 11px 0px 11px 26px;
+        background-color: #fdfdff;
+        color: darkgrey;
+    }
+    .bs p{
+        display: inline-block;
+        margin-left: 24px;
+    }
+    .st{
+        margin-left: 93px;
+        border-color: whitesmoke;
+        background-color: #fdfdff;
+        border-radius: 4px;
+        color: darkgray;
+    }
+    .bs h1{
+        display: inline-block;
+        margin-top: -20px;
+        font-size: 34px;
+        margin-bottom: 20px;
+        margin-left: 22px;
+    }
+    .set{
+        font-weight: bolder;
+        color: #21af7f;
+    }
+    .tr{
+        border: none;
+        background-color: white;
+        color:#25e4e4;
+        margin-left: 664px;
+    }
+        
+}

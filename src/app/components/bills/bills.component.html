@@ -1,0 +1,78 @@
+<div class="row">
+    <ngx-ui-loader></ngx-ui-loader>
+  </div>
+<div class="container-fluid nav-sec" style="overflow-x: hidden;">
+    <div class="row d-flex justify-content-center text-uppercase h1">{{fname}}&nbsp;{{lname}}</div>
+    <div class="row">
+        <div class="col navs">
+            <nav>
+                <a [routerLink]="'/dashboard'">DASHBOARD</a>
+                <a [routerLink]="'/Bills'" class="active">BILLS</a>
+                <a [routerLink]="'/Uptpro'">PROFILE</a>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+
+<div class=" bill-sec" style="overflow-x: hidden;">
+    <div class="row">
+        <div class="col bill">
+
+            <h3>RECENT SPENDS SUMMARY</h3>
+            <div class="bills">
+                <p>Total Due:</p>
+                <h1>{{totaldue1 | currency:'INR' }}/-</h1>
+                <button type="button" data-toggle="collapse" (click)="collapase()"
+                data-target="#transactions">show transactions<i *ngIf="!collapaseflag" class="material-icons" style="font-size: 16px;">keyboard_arrow_down</i>
+                <i *ngIf="collapaseflag" class="material-icons" style="font-size: 16px;">keyboard_arrow_up</i></button>
+                <div *ngIf="collapaseflag">
+                    <div><span>Transactions</span></div>
+                    <div class="mb-5" style="max-height: 260px;overflow-y:auto;">
+                        <table class="table" >
+                            <!-- <thead > -->
+                              <thead class="table-dark">
+                              <tr>
+                                
+                                <th scope="col">Receiver_id</th>
+                                <th scope="col">Transaction-Type</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Date</th>
+                                <!-- <th scope="col">name</th> -->
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let ele of temp" appHighlight>
+                                <td scope="row">{{ele.receiver_id}}</td>
+                                <td>{{ele.transaction_type}}</td>
+                                <td>{{ele.transaction_amount | currency:'INR'}}</td>
+                                <td>{{ele.transaction_date|date:'full'}}</td>
+                                <!-- <td>{{ele.name}}</td> -->
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container-fluid b-sec">
+    <div class="row">
+    <div class="col b">
+        
+            <h3>PREVIOUS BILLS</h3>
+            <div class="bs">
+            <h6>Bill generated on 15th Mar</h6>
+            <p>Amount Spent</p>
+            <button class="st"><i class="material-icons set" style="font-size: 14px;">done</i>settled</button><br>
+            <h1>2935.90</h1>
+            <button class="tr">show transactions<i class="material-icons" style="font-size: 16px;">keyboard_arrow_down</i></button>
+            </div> -->
+
+<!-- </div>
+    </div>
+    </div> -->

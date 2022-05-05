@@ -1,43 +1,58 @@
-<div class="container-fluid pro-sec">
+<div class="row">
+  <ngx-ui-loader></ngx-ui-loader>
+</div>
+<div class="container-fluid nav-sec">
+    <div class="row d-flex justify-content-center text-uppercase h1">{{fname}}&nbsp;{{lname}}</div>
     <div class="row">
-    <div class="col-2 pr">
-    
-    <div class="profile">
-    <img src="../../../assets/imd/1.jpg" id="upload-img" alt="#">
-    <label for="fileupload">Upload Profile</label>
-    <input type="file" id="fileupload">
-    
-    
+    <div class="col navs">
+    <nav>
+    <a [routerLink]="'/dashboard'" class="active" >DASHBOARD</a>
+    <a [routerLink]="'/Bills'">BILLS</a>
+    <a [routerLink]="'/Uptpro'">PROFILE</a>    
+    </nav>
+    </div>
+    </div>
     </div>
     
+    <div class="container-fluid dash-sec">
+    <div class="row">
+    <div class="col dash">
+    <div class="sub">
+    <div class="brd">
+    <p>Total Spent :<b>{{totaldue | currency:'INR'}}/-</b></p>
+    <button [routerLink]="'/vendor'"><i class="material-icons icn" style="font-size: 12px;">https</i>PAY NOW</button>
+    <!-- <h6>1 Active Accounts</h6> -->
+
+    <!-- (click)="paynow()" -->
+    <div class="sp">
+    <P>Spent till now :<br> <strong>{{totaldue |currency:'INR'}}/-</strong></P>
+    <!-- <p class="du">Due by <br><em>{{totaldate}}</em></p> -->
+ 
+         <p class="du">Due by <br><em>{{totaldate|date:'full'}}</em></p> 
+
+    <!-- <p class="du" *ngFor="let ele of tem">Due by <br><em >{{ele.b}}</em></p> -->
+    </div>
+    </div>
     
-    <div class="pro">
+    </div>
+    </div>
+    </div>
+  </div>
+    <!-- <div class="container-fluid trans-sec">
+    <div class="row">
+    <div class="col trans">
+    
+    <div class="sac">
+    <h1>TRANSACTIONS</h1>
     <ul>
-    <li><a href="#"><img src="../../../assets/imd/1.PNG" alt="#">Dashboard</a></li>
-    <li><a [routerLink]="'/trans'"><img src="../../../assets/imd/9.PNG" alt="#">Bills</a></li>
-    <li><a href="#"><img src="../../../assets/imd/7.PNG" alt="#"> Profile</a></li>
+        <li style="border-bottom: 2px solid whitesmoke;">t1<br><p>18th Mar 2022 9:03PM</p><b>875</b></li>
+        <li style="border-bottom: 2px solid whitesmoke;">t2<br><p>16th Mar 2022 5:19PM</p><b>CR 32.75</b></li>
+        <li>t3<br><p>16th Mar 2022 5:17PM</p><b>CR 500</b></li>
     </ul>
     </div>
     
     </div>
-    
-    <div class="col-10 box">
-    
-    <div class=" square">
-    <h1 >500</h1>
-    <p>CREDIT BALANCE</p>
-    <button [routerLink]="'/vendor'" type="submit" class="py">Shop</button>
     </div>
-    <div class=" square">
-    <h1>1000</h1>
-    <p class="cb">CREDIT LIMIT</p>
-    </div>
-    <div class=" square">
-    <h1>500</h1>
-    <p>CREDIT BILL</p>
-    <button [routerLink]="'/pay'"type="submit" class="py">Pay</button>
-    </div>
-    </div>
-    
-    </div>
-    </div>
+    </div> -->
+
+

@@ -1,42 +1,113 @@
-<div class="container-fluid start">
+
+
+
+
+<div class="row">
+  <ngx-ui-loader></ngx-ui-loader>
+</div>
+
+<div class="container-fluid one">
     <div class="container">
       <div class="row">
-        <div class="col-12 sign">
-          <div class="sign_up">
-            
-              <form #vendorForm=ngForm  >
-                <h1>VENDOR BOARD</h1>
-                
-              <input type="text"  name="Name" placeholder="ENTER THE PRODUCT NAME" required>
-              <br>
-              <input type="text" name="Lastname" placeholder="ENTER THE COST OF  PRODUCT" required>
-              <br>
+        <div class="col-12 int">
+          <h1>PAYLATTE</h1>
+          <h4>USER REPAYMENT</h4>
+          <!-- <h5 class="text-danger row " style="margin-left: 30%;" *ngIf="errorlogin==1">Invalid Credentials</h5> -->
+          <form #repayForm=ngForm (ngSubmit)="onSubmit()">
+          
+          <input type="text" [(ngModel)]="form.name" name="email" value="" placeholder="Enter Your name" required style="padding: 15px 66px;">
+          <br>
+          <input type="date"  [(ngModel)]="form.dob" name="date of birth" value="" placeholder="enter your dob" required style="padding: 15px 90px;">
+          <br>
+        
+          <button type="submit" [disabled]="!repayForm.valid">CHECKOUT</button>
+          <br>
+          <br>
 
-              
+          
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="particles.js"></script>
+  <script src="app.js"></script> -->
+
+  
+ 
+  
+  
+ 
 
 
-               <label id="spll">Payment mode: <select id="sp">
+
+
+
+
+
+
+
+
+<!-- <div class="container-fluid start">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 sign">
+        <div class="sign_up">
+
+        <form> -->
+
+          <!-- #vendorForm="ngForm" -->
+            <!-- <h1>USER REPAYMENT</h1>
+
+            <input type="text" name="Name" placeholder="NAME" required>
+            <br>
+            <input type="date" name="Lastname" placeholder="DATE" required>
+            <br>
+ -->
+
+
+
+            <!-- <label id="spll">Payment mode: <select id="sp">
                 <option>Online</option>
                 <option>Paylatte</option>
                 <option>Cash on delivery</option>
-            </select></label>
-       
-              
-              <!-- <label>Payment made: <select>
-                  <option>Online</option>
-                  <option>Paylatte</option>
-                  <option>Cash on delivery</option>
-              </select><label>Payment made: <select> -->
-              
-              <!-- <img src="../../../assets/image/1.JPG " alt="#">
-              <input type="text" name="Lastname" placeholder="ENTER THE COST OF PRODUCT" required> -->
-              <br>
-              <button type="submit" [disabled]="!vendorForm.valid">CHECKOUT</button> 
-            </form>          
-          </div>
+              </select></label> -->
+
+
+            <!-- <label>Payment made: <select>
+                <option>Online</option>
+                <option>Paylatte</option>
+                <option>Cash on delivery</option>
+              </select><label>Payment made: <select>  -->
+
+                  <!-- <img src="../../../assets/image/1.JPG " alt="#">
+                  <input type="text" name="Lastname" placeholder="ENTER THE COST OF PRODUCT" required>
+                  <br> -->
+                  <!-- [disabled]="!vendorForm.valid -->
+                  <!-- <button type="submit" >CHECKOUT</button>
+              </form>
         </div>
       </div>
     </div>
   </div>
+</div> -->
 
-  
+
+          <!-- #vendorForm="ngForm" -->
+
+           <!-- <label id="spll">Payment mode: <select id="sp">
+                <option>Online</option>
+                <option>Paylatte</option>
+                <option>Cash on delivery</option>
+              </select></label> -->
+
+
+            <!-- <label>Payment made: <select>
+                <option>Online</option>
+                <option>Paylatte</option>
+                <option>Cash on delivery</option>
+              </select><label>Payment made: <select>  -->
+
+                  <!-- <img src="../../../assets/image/1.JPG " alt="#">
+                  <input type="text" name="Lastname" placeholder="ENTER THE COST OF PRODUCT" required>
+                  <br> -->

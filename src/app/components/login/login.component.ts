@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   };
 
   public error = null;
-
+  public errorlogin = 0;
   
   constructor(
     private Jarwis: JarwisService,
@@ -30,9 +30,28 @@ export class LoginComponent implements OnInit {
   ) { }
 
   onSubmit() {
-    this.Jarwis.login(this.form).subscribe(
-      data => this.handleResponse(data),
-      // error => this.handleError(error),
+    this.Jarwis.login(this.form).subscribe(ele => {
+       
+        this.Jarwis.email=ele.email
+        this.Jarwis.fname=ele.fname
+        this.Jarwis.lname=ele.lname
+        this.Jarwis.mobile=ele.mobile
+        this.Jarwis.userid=ele.userid
+        this.handleResponse(ele)
+        localStorage.setItem("userid", ele.userid)
+        localStorage.setItem("fname",ele.fname)
+        localStorage.setItem("lname",ele.lname)
+        localStorage.setItem("mobile",ele.mobile)
+        localStorage.setItem("email",ele.email)
+
+      },
+      error => {
+        if(error.status==401)
+        {
+          console.log("ele")
+           this.errorlogin=1
+        }
+      },
     );
   }
 
@@ -44,6 +63,7 @@ export class LoginComponent implements OnInit {
 
  
   ngOnInit() {
+    this.errorlogin=0
   }
 
 }

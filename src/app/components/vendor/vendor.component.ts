@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JarwisService } from '../../services/jarwis.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vendor',
@@ -7,7 +9,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VendorComponent implements OnInit {
 
-  constructor() { }
+
+
+  public form = {
+    
+    
+    name:null,
+    
+    dob:null,
+     
+  };
+
+  constructor(
+    private Jarwis: JarwisService,
+    private router: Router
+  ) { }
+
+
+
+  onSubmit() {
+   this.Jarwis.repay(this.form).subscribe(
+     data => this.handleResponse(data),
+   );
+ }
+ handleResponse(data) {
+   // this.Token.handle(data.access_token);
+   // this.router.navigateByUrl('/login');
+   this.router.navigate(['Bills'])
+ }
 
   ngOnInit(): void {
   }

@@ -7,7 +7,13 @@
 	padding: 0px;
 	box-sizing: border-box;
 } 
-img {
+img {text-transform: capitalize;
+	color: black;
+	padding: 14px 79px;
+	text-align: center;
+	margin-top: 47px;
+	border-radius: 30px;
+	margin-left: 40px;
 	max-width: 100%;
 	height: auto;
 } 
@@ -19,21 +25,23 @@ img {
 	height: 900px;
 }
 .int {
-	margin-left: 685px;
-	background: #fff;
-	margin-top: 170px;
-	padding: 16px 25px;
-	height: 470px;
-	width: 470px;
-	border-radius: 10%;
+	margin-left: 400px;
+background: #fff;
+margin-top: 170px;
+padding: 16px 25px;
+height: 470px;
+width: 470px;
+border-radius: 10%;
+opacity: 0.8;
 }
 .int input {
 	text-transform: capitalize;
-	color: black;
-	padding: 14px 79px;
-	text-align: center;
-	margin-top: 47px;
-	border-radius: 30px;
+color: black;
+padding: 14px 79px;
+text-align: center;
+margin-top: 47px;
+border-radius: 30px;
+margin-left: 40px;
 	
 }
 .int button {
@@ -73,7 +81,8 @@ img {
 	background:skyblue;
 }
 .int a{font-size: 18px;
-text-decoration: none;
+	text-decoration: none;
+	margin-left: 0px;
 }
 
 
@@ -89,6 +98,196 @@ text-decoration: none;
 margin-left:20px;
 
 	}
+	
+	@media(max-width:600px){
+	.img {text-transform: capitalize;
+		color: black;
+		padding: 14px 79px;
+		text-align: center;
+		margin-top: 47px;
+		border-radius: 30px;
+		margin-left: 40px;
+		max-width: 100%;
+		height: auto;
+	} 
+	
+	 .one {
+		background: url("../../../assets/images/tuan-nguyen-9lhg59wHMIA-unsplash_01.png") no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 900px;
+	}
+	.int {
+		margin-left: 65px;
+	background: #fff;
+	margin-top: 170px;
+	padding: 16px 25px;
+	height: 470px;
+	width: 470px;
+	border-radius: 10%;
+	opacity: 0.8;
+	}
+	.int input {
+		text-transform: capitalize;
+	color: black;
+	padding: 14px 79px;
+	text-align: center;
+	margin-top: 47px;
+	border-radius: 30px;
+	margin-left: 40px;
+		
+	}
+	.int button {
+		color: #fff;
+		background: green;
+		border: none;
+		padding: 15px 12px;
+		text-transform: uppercase;
+		margin-left: 175px;
+		margin-top: 25px;
+		border-radius: 50%;
+	}
+	.int span {
+		color: black;
+		font-size: 17px;
+		margin-left: 7px;
+	}
+	.int img {
+		height: 58px;
+		margin-top: 9px;
+	}
+	.int h1 {
+		font-size: 32px;
+		text-transform: uppercase;
+		color: navy;
+		margin-top: 1px;
+		text-align: center;
+	}
+	.int h4{
+		font-size: 25px;
+		text-transform: uppercase;
+		color: navy;
+		margin-top: 1px;
+		text-align: center;
+	}
+	.int input:hover{
+		background:skyblue;
+	}
+	.int a{font-size: 17px;
+		text-decoration: none;
+		margin-left: 0px;
+		margin-left: 5px;
+	}
+	
+	
+	.ng-valid:not(form){
+		border-left:10px solid green;
+		}
+		
+		.ng-invalid:not(form){
+			border-left:10px solid red;
+		}
+		.fa{
+	
+	margin-left:20px;
+	
+		}
+	}
+	
+	@media(max-width:350px){
+		.img {text-transform: capitalize;
+			color: black;
+			padding: 14px 79px;
+			text-align: center;
+			margin-top: 47px;
+			border-radius: 30px;
+			margin-left: 40px;
+			max-width: 100%;
+			height: auto;
+		} 
+		
+		 .one {
+			background: url("../../../assets/images/tuan-nguyen-9lhg59wHMIA-unsplash_01.png") no-repeat;
+			background-position: center;
+			background-size: cover;
+			height:750px;
+		}
+		.int {
+			margin-left: 20px;
+background: #fff;
+margin-top: 150px;
+padding: 16px 25px;
+height: 390px;
+width: 300px;
+border-radius: 10%;
+opacity: 0.8;
+		}
+		.int input {
+			text-transform: capitalize;
+color: black;
+padding: 12px 30px;
+text-align: center;
+margin-top: 27px;
+border-radius: 30px;
+margin-left: 5px;
+			
+		}
+		.int button {
+			color: #fff;
+			background: green;
+			border: none;
+			padding: 15px 12px;
+			text-transform: uppercase;
+			margin-left: 85px;
+			margin-top: 25px;
+			border-radius: 50%;
+		}
+		.int span {
+			color: black;
+font-size: 10px;
+margin-left: 5px;
+margin-right: 7px;
+		}
+		.int img {
+			height: 58px;
+			margin-top: 9px;
+		}
+		.int h1 {
+			font-size: 22px;
+text-transform: uppercase;
+color: navy;
+margin-top: 1px;
+text-align: center;
+		}
+		.int h4{
+			font-size: 15px;
+			text-transform: uppercase;
+			color: navy;
+			margin-top: 1px;
+			text-align: center;
+		}
+		.int input:hover{
+			background:skyblue;
+		}
+		.int a{font-size: 11px;
+			text-decoration: none;
+			margin-left: -4px;
+		}
+		
+		
+		.ng-valid:not(form){
+			border-left:10px solid green;
+			}
+			
+			.ng-invalid:not(form){
+				border-left:10px solid red;
+			}
+			.fa{
+		
+		margin-left:20px;
+		
+			}
+		}
 /* .int span{} */
  
 

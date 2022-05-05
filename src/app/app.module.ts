@@ -9,7 +9,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { FooterComponent } from './components/footer/footer.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { DashboardComponent } from './components/dashboard/dashboard.component'
 import {HttpClientModule} from '@angular/common/http';
 
@@ -19,8 +19,33 @@ import { AuthService } from './services/auth.service';
 import { AfterLoginService } from './services/after-login.service';
 import { BeforeLoginService } from './services/before-login.service';
 import { VendorComponent } from './components/vendor/vendor.component';
-import { TransComponent } from './components/trans/trans.component';
-import { PayComponent } from './components/pay/pay.component';
+
+import { BillsComponent } from './components/bills/bills.component';
+import { UptproComponent } from './components/uptpro/uptpro.component';
+import { CreditLimitService } from './services/credit-limit.service';
+import { NgxUiLoaderConfig, NgxUiLoaderModule, PB_DIRECTION, POSITION, SPINNER } from 'ngx-ui-loader';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HighlightDirective } from './highlight.directive';
+import { NewComponent } from './new/new.component';
+import { StoreModule } from '@ngrx/store';
+import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
+import { BusinessComponent } from './components/business/business.component';
+import { ContComponent } from './components/cont/cont.component';
+import { EmailComponent } from './components/email/email.component';
+import { CodeComponent } from './components/code/code.component';
+
+const ngxuiloadconfig:NgxUiLoaderConfig = {
+  bgsColor:'red',
+  bgsPosition:POSITION.bottomCenter,
+  bgsSize:40,
+  bgsType:SPINNER.threeStrings,
+  fgsType:SPINNER.threeStrings,
+  fgsSize:200,
+  fgsColor:'black',
+  pbDirection:PB_DIRECTION.leftToRight,
+  pbThickness:0,
+  overlayColor:'rbga(20,20,20.6)'
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,17 +58,35 @@ import { PayComponent } from './components/pay/pay.component';
     ForgotPasswordComponent,
     DashboardComponent,
     VendorComponent,
-    TransComponent,
-    PayComponent
+    
+    BillsComponent,
+    UptproComponent,
+    HighlightDirective,
+    NewComponent,
+    BusinessComponent,
+    ContComponent,
+    EmailComponent,
+    CodeComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgxUiLoaderModule.forRoot(ngxuiloadconfig),
+    BrowserAnimationsModule,
+    StoreModule.forRoot({}, {}),
+    StoreRouterConnectingModule.forRoot()
     
-    HttpClientModule
   ],
-   providers: [JarwisService, TokenService, AuthService, AfterLoginService, BeforeLoginService,],
+   providers: [JarwisService, TokenService, AuthService, AfterLoginService, BeforeLoginService,CreditLimitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+// export class User{
+//   private _url = ""
+// }

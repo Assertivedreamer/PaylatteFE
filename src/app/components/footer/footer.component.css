@@ -1,18 +1,44 @@
+/* .container-fluid {
+    background: linear-gradient(-45deg,  );
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+    }
+    
+    @keyframes gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+    } */
+
+
+    
+
+
+
 .copyright-sec {
     background:rgb(26, 25, 25);
-    height: 180px;
+    
+     height: 200px;
 }
 
 .copy-sec {}
 
-.copy-sec h5 {
+.copy-sec h1 {
     color: white;
     margin-top: 87px;
     margin-left: 60px;
+    font-size: 20px;
 }
 
 .carr {
-    margin-left: 80px;
+    margin-left: 40px;
     margin-top: 60PX;
 }
 
@@ -29,7 +55,7 @@
 }
 
 .carr nav li a {
-font-size: 22px;
+font-size: 17px;
 text-decoration: none;
 }
 
@@ -43,4 +69,132 @@ text-decoration: none;
     height: 50px;
     margin-right: 5px;
     margin-top: 20px;
+}
+
+@media(max-width:600px) {
+    .copyright-sec {
+        /* background:rgb(26, 25, 25); */
+        
+         height: 200px;
+    }
+    
+    .copy-sec {}
+    
+    .copy-sec h5 {
+        color: white;
+        margin-top: 87px;
+        margin-left: 4px;
+        width: 191px;
+    }
+    
+    .carr {
+        margin-left: 4px;
+margin-top: 60PX;
+font-size: 15px;
+    }
+    
+    .carr nav {
+        margin-top: 20px;
+margin-left: 10px;
+text-decoration: none;
+    }
+    
+    .carr nav ul {}
+    
+    .carr nav li {
+        margin-left:4px;
+        list-style: none;
+    }
+    
+    .carr nav li a {
+        font-size: 13px;
+    text-decoration: none;
+    margin-left:4px;
+    
+    }
+    
+    .foot {
+        float: right;
+    }
+    
+    .foot img {
+        border-radius: 160px;
+width: 30px;
+height: 30px;
+margin-right: 5px;
+margin-top: 74px;
+    }
+}
+@media(max-width:350px) {
+    .copyright-sec {
+        /* background:rgb(26, 25, 25); */
+        
+         height: 200px;
+    }
+    
+    .copy-sec {}
+    
+    .copy-sec h5 {
+        color: white;
+margin-top: 50px;
+width: 191px;
+font-size: 8px;
+    }
+    
+    .carr {
+        margin-left: -15px;
+margin-top: 10PX;
+font-size: 15px;
+    }
+    
+    .carr nav {
+        margin-top: 20px;
+margin-left: 10px;
+text-decoration: none;
+    }
+    
+    .carr nav ul {}
+    
+    .carr nav li {
+        margin-left:4px;
+        list-style: none;
+        
+    }
+    
+    .carr nav li a {
+        font-size: 10px;
+text-decoration: none;
+color: white;
+
+    
+    }
+    
+    .foot {
+        float: right;
+    }
+    
+    .foot img {
+        border-radius: 160px;
+width: 20px;
+height: 20px;
+margin-right: 5px;
+margin-top: 50px;
+    }
+}
+.color{
+    color: white;
+}
+.gotopbtn{
+    border-radius: 40px;
+    position:fixed;
+	width:50px;
+	height:50px;
+	background:#27ae60;
+	bottom:40px;
+	right:50px;
+	text-decoration:none;
+	text-align:center;
+	line-height:50px;
+	color:#fff;
+	font-size:22px;
 }

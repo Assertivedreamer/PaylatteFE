@@ -1,24 +1,40 @@
-<div class=" container-fluid tele-logo ">
-    <div class="row">
-        <div class="col-5 tele-sec ">
-            <div class="tel "> <img src="../assets/ZoodPay - Buy now Pay later_files/one.PNG " alt="aaaa"> </div>
-        </div>
-        <div class="col-7 nav-sec ">
-            <div class="logo">
-                <nav>
-                    <a routerLink="/home"  *ngIf="!loggedIn">Home</a>
-                    <a href="# " *ngIf="!loggedIn">Where to shop</a> 
-                    <a href="# " *ngIf="!loggedIn" >For Business</a>
-                    <a href="# " *ngIf="!loggedIn" >About us</a>
-                    <button class="btn btn-success" routerLink="/login" *ngIf="!loggedIn" >Login</button>
+
+<div class="container-fluid tele-logo ">
+   
+            <div class="row">
+        <div class="col-12 tele-sec">
+            <nav>
+                <input  type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <label>
+                
+                <img src="../assets/ZoodPay - Buy now Pay later_files/one.PNG" alt="aaaa"> 
+            </label>
+       
+           
+        
+        <ul>
+               
+            <li> <a routerLink="/home"  *ngIf="!loggedIn">Home</a></li>
+               <li> <a href="#Where to shop " *ngIf="!loggedIn">Where to shop</a></li> 
+               <li> <a [routerLink]="'/business'" *ngIf="!loggedIn" >For Business</a></li>
+            <li> <a [routerLink]="'/con'" *ngIf="!loggedIn" >Contact us</a></li>
+            
+                       <button class="btn btn-success" routerLink="/login" *ngIf="!loggedIn" >Login</button>
+                    
                     <button class="btn btn-success" (click)="logout($event)" *ngIf="loggedIn" id="log" >Logout</button>
-                </nav>
+                </ul>
+            </nav>
             </div>
+            
         </div>
     </div>
-</div>
 
-<router-outlet  ></router-outlet>
+
+<router-outlet></router-outlet>
 <app-footer ></app-footer>
 
 <!----------------------------------------------------------->

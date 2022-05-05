@@ -7,11 +7,17 @@ import { RegisterComponent } from './components/register/register.component';
 import {ForgotPasswordComponent} from './components/forgot-password/forgot-password.component'
 import {DashboardComponent} from './components/dashboard/dashboard.component'
 import {VendorComponent} from './components/vendor/vendor.component'
-import { PayComponent } from './components/pay/pay.component';
-import { TransComponent } from './components/trans/trans.component';
+
+import { BillsComponent } from './components/bills/bills.component';
+import { UptproComponent } from './components/uptpro/uptpro.component';
 
 import { BeforeLoginService } from './services/before-login.service';
 import { AfterLoginService } from './services/after-login.service';
+import { BusinessComponent } from './components/business/business.component';
+import { ContComponent } from './components/cont/cont.component';
+import { EmailComponent } from './components/email/email.component';
+import { CodeComponent } from './components/code/code.component';
+
 const routes: Routes = [
   {
     path:'',
@@ -43,8 +49,8 @@ const routes: Routes = [
     canActivate: [AfterLoginService]
   },
   {
-    path:'pay', 
-    component: PayComponent,
+    path:'Bills', 
+    component: BillsComponent,
     canActivate: [AfterLoginService]
   },
   {
@@ -54,10 +60,33 @@ const routes: Routes = [
 
   },
   {
-    path:'trans', 
-    component: TransComponent,
+    path:'Uptpro', 
+    component: UptproComponent,
     canActivate: [AfterLoginService]
 
+  },
+  {
+    path:'business', 
+    component: BusinessComponent,
+    canActivate: [BeforeLoginService]
+  },
+  {
+    path:'con', 
+    component: ContComponent,
+    canActivate: [BeforeLoginService]
+  },
+
+  {
+    path:'em', 
+    component: EmailComponent,
+    canActivate: [BeforeLoginService]
+  },
+
+  
+  {
+    path:'code', 
+    component: CodeComponent,
+    canActivate: [BeforeLoginService]
   },
   {
     path:'**',

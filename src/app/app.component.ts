@@ -6,6 +6,7 @@ import { Component,  OnInit } from '@angular/core';
 import { AuthService } from './services/auth.service';
 import { Router } from '@angular/router';
 import { TokenService } from './services/token.service';
+import { JarwisService } from './services/jarwis.service';
 
 
 @Component({
@@ -21,12 +22,14 @@ export class AppComponent implements OnInit {
   constructor(
     private Auth: AuthService,
     private router: Router,
-    private Token: TokenService
+    private Token: TokenService,
+    public _js:JarwisService
   ) { }
-  
-  
+  fname:string
+  lname:string
   ngOnInit() {
     this.Auth.authStatus.subscribe(value => this.loggedIn = value);
+    
   }
   
   logout(event: MouseEvent) {

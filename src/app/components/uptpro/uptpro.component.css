@@ -1,0 +1,133 @@
+.nav-sec{
+
+}
+.navs{
+    border: 2px solid whitesmoke;
+    padding: 22px 0px;
+}
+
+
+/* .navs {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #eff22c);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+    }
+    
+    @keyframes gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+    } */
+
+.navs nav{
+    padding-left: 20px;
+}
+.navs nav a{
+    margin-left: 270px;
+    color: darkgray;
+    text-decoration: none;
+}
+.navs nav a.active{color:green;}
+.navs nav a:hover{
+    color:#34f1df;
+    border-bottom:4px solid #34f1df;
+    text-decoration: none;
+    padding-bottom:20px;
+}
+
+.bck-sec{
+    margin-top: 34px;
+     background: #3da197; 
+     height: 1200px;
+    }
+
+
+/* .bck-sec {
+        background: linear-gradient(-45deg,#34f1df);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+        height: 1200px;
+        
+        }
+        
+        @keyframes gradient {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+        } */
+
+.pro-sec{
+
+}
+.pro{
+
+}
+.icn{
+    border: 2px solid antiquewhite;
+    width: 50%;
+    height: 800px;
+    margin-top: 95px;
+    margin-left: 330px;
+    background-color: white;
+    padding-left: 65px;
+    padding-right: 55px;
+}
+.icn img{
+    width: 21%;
+    margin-left: 200px;
+    margin-top: -66px;
+    border-radius: 168px;
+    /*! image-orientation: none; */
+    /*! image-align: center; */
+}
+.icn h1{
+    font-weight: 405;
+    color: darkgray;
+    text-align:center;
+}
+.icn h2{
+    color: darkgray;
+    font-weight: 350;
+    margin-top: 80px;
+    text-align: center;
+}
+.icn h6{
+    color: #2bdcdc;
+    float: right;
+    margin-right: 72px;
+    margin-top: -15px;
+}
+.icn p{
+    margin-left: 40px;
+    margin-top: 35px;
+}
+.icn ul{
+
+}
+.icn ul li{
+    list-style: none;
+    margin-top: 50px;
+    color: darkgray;
+}
+.icn ul li input{
+    border: none;
+    border-bottom: 2px solid darkgray;
+    display: block;
+    width: 87%;
+}
+.icn ul li i{
+    font-size:20px;
+}

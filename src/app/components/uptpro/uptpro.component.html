@@ -1,0 +1,48 @@
+
+
+<div class="row">
+    <ngx-ui-loader></ngx-ui-loader>
+  </div>
+<div class="container-fluid nav-sec">
+    <div class="row">
+    <div class="col navs">
+    <nav>
+    <a [routerLink]="'/dashboard'">DASHBOARD</a>
+    <a [routerLink]="'/Bills'">BILLS</a>
+    <a [routerLink]="'/Uptpro'" class="active">PROFILE</a>    
+    </nav>
+    </div>
+    </div>
+    </div>
+
+
+
+
+<div class="bck-sec">
+    <div class="container-fluid pro-sec">
+    <div class="row">
+    <div class="col pro">
+    
+    <div class="icn">
+        <form [formGroup]="details">
+        <img src="../../../assets/imd/prouser.jpg" alt="#" >  
+        <h1 class="text-uppercase">{{this.details.controls['fname'].value}}&nbsp;{{this.details.controls['lname'].value}}</h1>  
+        <h2>Profile Details</h2>
+        <ul>
+            
+            <li><label>Mobile Number</label><input type="text" formControlName="mobile"  placeholder="Mobile number" readonly></li>
+            <li><label>First Name</label><input type="text" formControlName="fname" placeholder="First name" readonly></li>
+            <li><label>Last Name</label><input type="text"  formControlName="lname" placeholder="Last name" readonly></li>
+            <li><label>Email</label><input type="email" formControlName="email" placeholder="Email Address" readonly></li>
+           
+        
+        </ul>
+       
+    </form>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    
+    </div>

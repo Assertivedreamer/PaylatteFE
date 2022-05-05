@@ -1,9 +1,14 @@
+<div class="row">
+  <ngx-ui-loader></ngx-ui-loader>
+</div>
+
 <div class="container-fluid one">
     <div class="container">
       <div class="row">
         <div class="col-12 int">
           <h1>PAYLATTE</h1>
           <h4>LOGIN</h4>
+          <h5 class="text-danger row " style="margin-left: 30%;" *ngIf="errorlogin==1">Invalid Credentials</h5>
           <form #loginForm=ngForm (ngSubmit)="onSubmit()">
           
           <input type="text" [(ngModel)]="form.email" name="email" value="" placeholder="Enter Your Email" required >
@@ -15,15 +20,17 @@
           <br>
           <br>
 
-          <a class="fa"[routerLink]="'/forgot-password'" >Forgot Password</a>
+          <a class="fa"[routerLink]="'/forgot-password'" style="margin-left: 30px;">Forgot Password</a>
         <span>Don't have an Account?</span>
-        <a [routerLink]="'/register'" >Sign up</a>
+        <a [routerLink]="'/register'">Signup</a>
          
         </form>
       </div>
       </div>
     </div>
   </div>
+  <!-- <script src="particles.js"></script>
+  <script src="app.js"></script> -->
 
   
  
