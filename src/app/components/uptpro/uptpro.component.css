@@ -3,7 +3,7 @@
 }
 .navs{
     border: 2px solid whitesmoke;
-    padding: 22px 0px;
+    padding: 70px 0px;
 }
 
 
@@ -46,6 +46,7 @@
     margin-top: 34px;
      background: #3da197; 
      height: 1200px;
+     border-radius:30px;
     }
 
 
@@ -84,6 +85,8 @@
     background-color: white;
     padding-left: 65px;
     padding-right: 55px;
+    border-radius:30px;
+
 }
 .icn img{
     width: 21%;

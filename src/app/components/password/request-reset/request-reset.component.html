@@ -1,0 +1,52 @@
+<!-- <div class="total">
+<div class="mt-4 col-8 offset-2">
+    <div class="down">
+    <div class="card">
+      <div class="card-header">Send Email for Reset password</div>
+      <div class="card-body">
+        <form #RequestResetForm=ngForm (ngSubmit)="onSubmit()">
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" [(ngModel)]="form.email" required>
+            </div>
+          </div>
+  
+          <div class="form-group row">
+            <div class="col-sm-10 offset-2">
+  
+              <button type="submit" class="btn btn-primary" [disabled]="!RequestResetForm.valid">Send Password Reset Email</button>
+  
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+<div class="container-fluid start">
+  <div class="container">
+    <div class="col-12 for">
+        
+      <div class="for_got">
+      <div class="forr">
+        <form #RequestResetForm=ngForm (ngSubmit)="onSubmit()">
+
+      <h2>PAYLATTE</h2>
+        <h1>Forgot Password</h1>
+        <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" [(ngModel)]="form.email" required>
+
+        <!-- <input type="text" [(ngModel)]="form.email" name="email" placeholder="Enter your linked mail" required> -->
+        <!-- <input type="password" [(ngModel)]="form.password" name="password" placeholder="Enter your new password" required> -->
+        <!-- <input type="password" [(ngModel)]="form.confirm_password" name="ConfirmPassword" placeholder="Enter your confirm_password" required> -->
+        <br>
+        <button type="submit" class="btn btn-success" [disabled]="!RequestResetForm.valid">Send Password Reset Email</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+

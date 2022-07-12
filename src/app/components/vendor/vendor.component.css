@@ -129,7 +129,7 @@ font-size: 20px;
         opacity: 0.8;
         }
         .int input {
-            text-transform: capitalize;
+            /* text-transform: capitalize; */
         color: black;
         text-align: center;
         margin-top: 47px;
@@ -166,7 +166,7 @@ font-size: 20px;
         }
         .int h4{
             font-size: 25px;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
             color: navy;
             margin-top: 1px;
             text-align: center;

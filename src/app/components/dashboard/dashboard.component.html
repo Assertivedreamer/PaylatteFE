@@ -1,17 +1,17 @@
 <div class="row">
   <ngx-ui-loader></ngx-ui-loader>
 </div>
-<div class="container-fluid nav-sec">
-    <div class="row d-flex justify-content-center text-uppercase h1">{{fname}}&nbsp;{{lname}}</div>
-    <div class="row">
-    <div class="col navs">
-    <nav>
-    <a [routerLink]="'/dashboard'" class="active" >DASHBOARD</a>
-    <a [routerLink]="'/Bills'">BILLS</a>
-    <a [routerLink]="'/Uptpro'">PROFILE</a>    
-    </nav>
-    </div>
-    </div>
+<div class="dashboard-container nav-sec">
+    <div class="d-flex justify-content-center text-uppercase h1">{{fname}}&nbsp;{{lname}}</div>
+    <div class="">
+      <div class="col navs">
+      <nav>
+      <a [routerLink]="'/dashboard'" class="active" >DASHBOARD</a>
+      <a [routerLink]="'/Bills'">BILLS</a>
+      <a [routerLink]="'/Uptpro'">PROFILE</a>    
+      </nav>
+      </div>
+      </div>
     </div>
     
     <div class="container-fluid dash-sec">
@@ -20,7 +20,7 @@
     <div class="sub">
     <div class="brd">
     <p>Total Spent :<b>{{totaldue | currency:'INR'}}/-</b></p>
-    <button [routerLink]="'/vendor'"><i class="material-icons icn" style="font-size: 12px;">https</i>PAY NOW</button>
+    <button [routerLink]="'/repayment'"><i class="material-icons icn" style="font-size: 12px;">https</i>PAY NOW</button>
     <!-- <h6>1 Active Accounts</h6> -->
 
     <!-- (click)="paynow()" -->

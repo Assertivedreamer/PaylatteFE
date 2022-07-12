@@ -26,16 +26,15 @@ img {text-transform: capitalize;
 }
 .int {
 	margin-left: 400px;
-background: #fff;
+background: #f1eeee ;
 margin-top: 170px;
 padding: 16px 25px;
 height: 470px;
 width: 470px;
 border-radius: 10%;
-opacity: 0.8;
+opacity: 0.7;
 }
 .int input {
-	text-transform: capitalize;
 color: black;
 padding: 14px 79px;
 text-align: center;
@@ -66,14 +65,14 @@ margin-left: 40px;
 .int h1 {
 	font-size: 32px;
 	text-transform: uppercase;
-	color: navy;
+	color: rgb(3, 3, 3);
 	margin-top: 1px;
 	text-align: center;
 }
 .int h4{
 	font-size: 25px;
-	text-transform: uppercase;
-	color: navy;
+	/* text-transform: uppercase; */
+	color: rgb(11, 11, 12);
 	margin-top: 1px;
 	text-align: center;
 }
@@ -290,5 +289,11 @@ text-align: center;
 		}
 /* .int span{} */
  
-
-
+.fa-eye-slash:before {
+    content: "\f070";
+    margin-left: -30px;
+}
+.fa-eye:before {
+    content: "\f06e";
+	margin-left: -30px;
+}

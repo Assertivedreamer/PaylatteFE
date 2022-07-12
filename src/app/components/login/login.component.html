@@ -7,20 +7,33 @@
       <div class="row">
         <div class="col-12 int">
           <h1>PAYLATTE</h1>
-          <h4>LOGIN</h4>
-          <h5 class="text-danger row " style="margin-left: 30%;" *ngIf="errorlogin==1">Invalid Credentials</h5>
+          <h4>Login</h4>
+          <h5 class="text-danger row " style="margin-left: 35%;font-size:15px;" *ngIf="errorlogin==1">Invalid Credentials</h5>
           <form #loginForm=ngForm (ngSubmit)="onSubmit()">
           
           <input type="text" [(ngModel)]="form.email" name="email" value="" placeholder="Enter Your Email" required >
           <br>
-          <input type="password" [(ngModel)]="form.password" name="password" value="" placeholder="enter your password" required>
+          
+          <input type="password" [(ngModel)]="form.password" name="password"  #password1 value="" placeholder="enter your password" (click)="changeType(password1, 1)"required><i [ngClass]="toggle1 ? 'fas fa-eye' : 'fas fa-eye-slash'"></i>
+          <!-- <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i> -->
+          <!-- <button  mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"[attr.aria-pressed]="hide">
+            <mat-icon>
+              {{hide ? 'visibility_off' : 'visibility'}}
+          </mat-icon>
+        </button> -->
+
+        <!-- <input type="password" name="password" id="password" #password1 class="col-md-9 form-control" placeholder="Password" [(ngModel)]="password"> -->
+    <!-- <div  (click)="changeType(password1, 1)">
+      <i [ngClass]="toggle1 ? 'fas fa-eye' : 'fas fa-eye-slash'"></i>
+    </div> -->
           <br>
         
           <button type="submit"[disabled]="!loginForm.valid" >log in</button>
           <br>
           <br>
+          <a class="fa" routerLink="/request-password-reset" style="margin-left: 30px;">Forgot Password</a>
 
-          <a class="fa"[routerLink]="'/forgot-password'" style="margin-left: 30px;">Forgot Password</a>
+          <!-- <a class="fa"[routerLink]="'/forgot-password'" style="margin-left: 30px;">Forgot Password</a> -->
         <span>Don't have an Account?</span>
         <a [routerLink]="'/register'">Signup</a>
          

@@ -18,14 +18,14 @@
     } */
 
 
-    
 
 
 
 .copyright-sec {
     background:rgb(26, 25, 25);
-    
-     height: 200px;
+    /* border-radius:30px; */
+
+     height: 140px;
 }
 
 .copy-sec {}

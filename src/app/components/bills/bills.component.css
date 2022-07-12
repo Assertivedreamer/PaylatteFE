@@ -1,5 +1,5 @@
-.nav-sec{    height: 123px;
-
+.nav-sec{    
+    margin-top: 45px;
 }
 .navs{
     border: 2px solid whitesmoke;
@@ -29,7 +29,9 @@
 .bill-sec{
     margin-top: 34px;
      background: #3da197; 
-    height: 700px;}
+    height: 700px;
+    border-radius:30px;
+}
 
     .text-uppercase {
         text-transform: uppercase !important;

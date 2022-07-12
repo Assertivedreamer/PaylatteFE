@@ -3,7 +3,7 @@ import { JarwisService } from '../../services/jarwis.service';
 import { Router } from '@angular/router';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { FormGroup} from '@angular/forms';
+import { FormGroup, NgForm} from '@angular/forms';
 
 declare var $:any
 @Component({
@@ -17,7 +17,13 @@ export class RegisterComponent implements OnInit {
   // public form1 : {
   //   otp1:null
   // }
+  password: string = '';
+  c_password: string = '';
+  toggle1: boolean = false;
+  toggle2: boolean = false;
 
+
+  public isFormSubmitted: boolean = false;
   public id:string
   public email1:string
   public form = {
@@ -42,29 +48,49 @@ export class RegisterComponent implements OnInit {
     private router: Router
   ) { }
 
-  onSubmit() {
-    
+  // onSubmit(myForm: NgForm) {
+  //   if(myForm.invalid){
+  //     return;
+  //   }
 
-    this.Jarwis.signup(this.form).subscribe(
-      data => this.handleResponse(data),
-    );
-    // $("#otpmodal").modal('show')
-    
-   
-    
-  }
-
-  // onSubmit1() {
-    
-  //   // console.log(this.otp1);
-  //   this.Jarwis.requestOtp(this.form1).subscribe(
+  //   this.Jarwis.signup(this.form).subscribe(
   //     data => this.handleResponse(data),
   //   );
-  //   alert('work');
     
-   
+    
+  //   alert('User successfully signedin');
+
+    
     
   // }
+
+  onSubmit(myForm: NgForm) {
+    if(myForm.invalid){
+      return;
+    }
+    this.Jarwis.signup(this.form) 
+     .subscribe({
+      next:(data)=>{
+         this.handleResponse(data);
+                alert("signup successfully");
+  
+                    },
+      error:(error)=>{
+        console.log(error.error);
+        alert("email or user already exist")
+      }
+    })
+  
+  }
+
+
+  
+
+
+
+
+
+  
 
 
 
@@ -75,14 +101,7 @@ export class RegisterComponent implements OnInit {
   }
 
   
-  // handleError(error) {
-  //   this.error = error.error.errors;
-  // }
-  // otpval()
-  // {
-  //   this.Jarwis.verifyOtp(this.id,this.otp).subscribe(
-  //     data =>this.handleResponse(data),
-  //   );
+  
 
   
   otpval1()
@@ -95,6 +114,18 @@ export class RegisterComponent implements OnInit {
   }
   ngOnInit() {
   }
+  changeType(input_field_password, num){
+    if(input_field_password.type=="password")
+      input_field_password.type = "text";
+    else
+      input_field_password.type = "password";
+
+    if(num == 1)
+      this.toggle1 = !this.toggle1;
+    else
+      this.toggle2 = !this.toggle2;
+  }
+
 
 }
 

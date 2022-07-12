@@ -27,14 +27,36 @@ export class VendorComponent implements OnInit {
 
 
 
-  onSubmit() {
-   this.Jarwis.repay(this.form).subscribe(
-     data => this.handleResponse(data),
-   );
- }
- handleResponse(data) {
+//   onSubmit() {
+
+//    this.Jarwis.repay(this.form).subscribe(
+//      data => this.handleResponse(data),
+
+//    );
+   
+//  }
+ onSubmit(){
+  this.Jarwis.repay(this.form) 
+   .subscribe({
+    next:(data)=>{
+       this.handleResponse(data);
+              alert("paid successfully");
+
+                  },
+    error:(error)=>{
+      console.log(error.error);
+      alert("paid unsuccessfully")
+    }
+  })
+
+}
+
+
+ handleResponse(data:any) {
    // this.Token.handle(data.access_token);
    // this.router.navigateByUrl('/login');
+    // alert('paid successfully');
+
    this.router.navigate(['Bills'])
  }
 
@@ -42,3 +64,16 @@ export class VendorComponent implements OnInit {
   }
 
 }
+
+
+// deleteStudent(id:number){
+//   this.api.deleteStudent(id).subscribe({
+//     next:(res)=>{
+//       alert("Studentdetails deleted successfully");
+//       this.getAllStudents();
+//     },
+//     error:()=>{
+//       alert("Error while getting the details")
+//     }
+//   })
+// }

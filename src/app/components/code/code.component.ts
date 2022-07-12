@@ -24,6 +24,7 @@ export class CodeComponent implements OnInit {
 
     this.Jarwis.verifyOtp(this.form).subscribe(
       data => this.handleResponse(data),
+
     );
     // $("#otpmodal").modal('show')
     
@@ -33,6 +34,7 @@ export class CodeComponent implements OnInit {
   handleResponse(data) {
     // this.Token.handle(data.access_token);
     // this.router.navigateByUrl('/login');
+    alert('Otp Verified Successfully');
     this.router.navigate(['login'])
   }
 

@@ -3,15 +3,19 @@
 * {
 	margin: 0px;
 	padding: 0px
+	
 }
 
+p{
+	text-align: justify;
+}
  img {
 	width: 100%;
 	height: auto;
 }
 
 .second {background:#fff;
-height:4200px;
+height:4380px;
 }
 .power {
 }
@@ -19,25 +23,25 @@ height:4200px;
 	color: #3d3f93;
 	width: 49%;
 	line-height: 55px;
-	margin-left: 680px;
+	margin-left: 390px;
 }
 
 .power h1 b{background:#ffdd00;
 }
 .power h2 {
-	margin-left: 160px;
+	margin-left: 100px;
 	font-size: 20px;
 }
 .power p {
 	color: #0f0e0e;
-margin-left: 160px;
-line-height: 30px;
-width: 1520px;
-text-align: justify;
+    margin-left: 100px;
+    line-height: 30px;
+    width: 1130px;
+    text-align: justify;
 }
 .power img {
 	width: 59%;
-	margin-left: 400px;
+	margin-left: 270px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }

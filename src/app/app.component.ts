@@ -12,12 +12,14 @@ import { JarwisService } from './services/jarwis.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+
+  
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
   public loggedIn: boolean;
   title = 'ang';
-
+// public mytext="postfix";
   
   constructor(
     private Auth: AuthService,
@@ -37,6 +39,8 @@ export class AppComponent implements OnInit {
     this.Token.remove();
     this.Auth.changeAuthStatus(false);
     this.router.navigateByUrl('/home');
+    alert('User successfully logout');
+
   }
 
  

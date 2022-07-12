@@ -1,0 +1,72 @@
+*{margin:0px;
+padding:0px;}
+
+
+ img{
+     width:100%;
+     height:auto;
+ } 
+ /* .total{
+     background:#000;
+     height:700px;
+ }  */
+
+
+
+ .start {
+	background:url(../../../../assets/img/pexels-pixabay-39584.jpg)no-repeat;background-size:cover;background-position:center;
+	height: 900px;
+}
+.for_got {
+	padding-top: 200px;
+	/*! background: #fff; */
+}
+.forr {
+    opacity: 0.8;
+	background: #fff;
+    width: 385px;
+    height: 445px;
+    margin-left: 470px;
+    border-radius: 10%;}
+.forr h2 {
+	color: #247eb9;
+	font-size: 27px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.forr h1 {
+	color: #247eb9;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 30px;
+	margin-top: 37px;
+}
+.forr input {
+	margin-left: 60px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 26px;
+    width: 270px;}
+.forr button {
+	margin-top: 50px;
+	margin-left: 80px;
+	background:darkgreen;
+	color: #fff;
+	border: none;
+	font-size: 15px;
+	padding: 5px 20px;
+	border-radius: 18px;
+}
+.forr input:hover{background:#eaeef0;}
+
+
+.ng-valid:not(form){
+	border-left:10px solid green;
+	}
+	
+	.ng-invalid:not(form){
+		border-left:10px solid red;
+	}

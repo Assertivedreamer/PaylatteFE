@@ -17,6 +17,8 @@ import { BusinessComponent } from './components/business/business.component';
 import { ContComponent } from './components/cont/cont.component';
 import { EmailComponent } from './components/email/email.component';
 import { CodeComponent } from './components/code/code.component';
+import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
+import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
 
 const routes: Routes = [
   {
@@ -44,7 +46,7 @@ const routes: Routes = [
     component: ForgotPasswordComponent
   },
   {
-    path:'vendor', 
+    path:'repayment', 
     component: VendorComponent,
     canActivate: [AfterLoginService]
   },
@@ -86,6 +88,18 @@ const routes: Routes = [
   {
     path:'code', 
     component: CodeComponent,
+    canActivate: [BeforeLoginService]
+  },
+
+
+  {
+    path: 'request-password-reset',
+    component: RequestResetComponent,
+    canActivate: [BeforeLoginService]
+  },
+  {
+    path: 'response-password-reset',
+    component: ResponseResetComponent,
     canActivate: [BeforeLoginService]
   },
   {

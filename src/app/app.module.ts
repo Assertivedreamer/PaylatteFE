@@ -33,6 +33,8 @@ import { BusinessComponent } from './components/business/business.component';
 import { ContComponent } from './components/cont/cont.component';
 import { EmailComponent } from './components/email/email.component';
 import { CodeComponent } from './components/code/code.component';
+import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
+import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
 
 const ngxuiloadconfig:NgxUiLoaderConfig = {
   bgsColor:'red',
@@ -66,7 +68,9 @@ const ngxuiloadconfig:NgxUiLoaderConfig = {
     BusinessComponent,
     ContComponent,
     EmailComponent,
-    CodeComponent
+    CodeComponent,
+    RequestResetComponent,
+    ResponseResetComponent
     
   ],
   imports: [

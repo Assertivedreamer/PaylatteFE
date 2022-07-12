@@ -13,11 +13,7 @@ export class JarwisService {
    public userid:string;
   constructor(private http: HttpClient) { }
 
-  // private _refreshNeeded$ = new Subject<void>();
-
-  // get refreshNeeded$() {
-  //   return this._refreshNeeded$;
-  // }
+ 
 
   signup(data) {
     return this.http.post(`${this.baseUrl}api/admin/signup`,data)
@@ -59,6 +55,16 @@ export class JarwisService {
   verifyOtp(data: any):Observable<any>{
     return this.http.post(`${this.baseUrl}api/verify_otp/`,data);
   }
+
+  sendPasswordResetLink(data) {
+    return this.http.post(`${this.baseUrl}api/admin/sendPasswordResetLink`, data)
+  }
+  
+  changePassword(data) {
+    return this.http.post(`${this.baseUrl}api/admin/resetPassword`, data)
+  }
+
+
 }
 
 
